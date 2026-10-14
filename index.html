@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blushly | Your Beauty Destination</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="brand">
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <a href="#cart" class="cart-icon" aria-label="Shopping cart">
+            <span class="cart-symbol">🛒</span>
+            <span class="cart-count"></span>
+        </a>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="subtitle">WELCOME TO BLUSHLY</p>
+                <h1>Beauty Begins<br>With You</h1>
+                <p class="hero-description">Discover the latest trends, top-rated products, and exclusive deals.Let your beauty shine everyday.</p>
+                <a href="#products" class="shop-button">Shop Now</a>
+            </div>
+        </section>
+       <section class="categories" id="categories">
+            <h2>Shop by Category</h2>
+            <p class="section-description">Browse our wide range of beauty products across different categories.</p>
+                <div class="category-container">
+                    <a href="#products" class="category-card">
+                        <div class="category-emoji">💄</div>
+                        <h3>Lip Makeup</h3>
+                    </a>
+
+                    <a href="#products" class="category-card">
+                        <div class="category-emoji">✨</div>
+                        <h3>Face Makeup</h3>
+                    </a>
+
+                    <a href="#products" class="category-card">
+                       <div class="category-emoji">👁️</div> 
+                        <h3>Eye Makeup</h3>
+                    </a>
+
+                     <a href="#products" class="category-card">
+                        <div class="category-emoji">🖌️</div>
+                        <h3>Brushes</h3>
+                     </a>
+                </div>
+                </section>
+                
+                <section class="products" id="products">
+                    <h2>The Best Picks</h2>
+                    <p class="section-description">Explore our curated selection of top-rated beauty products.</p>
+                    
+                    <div class="product-container">
+                        <article class="product-card">
+                            <div class="product-image">💄</div>
+                            <h3>Velvet Matte Lipstick</h3> 
+                            <p class="price">Ksh 2,999</p>
+                             <button class="product-button" type="button">Add to Cart</button>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">✨</div>
+                            <h3>Radiant Glow Foundation</h3>
+                            <p class="price">Ksh 4,499</p>
+                            <button class="product-button" type="button">Add to Cart</button>
+                        </article>
+
+                        <article class="product-card">
+                    <div class="product-image">🖌️</div>
+                    <h3>Makeup Brush Set</h3>
+                    <p class="price">KSh 1,500</p>
+                    <button class="product-button" type="button">
+                        Add to Cart
+                    </button>
+                </article>
+                    </div>
+            </section>
+
+            <!-- BLUSHLY SHOPPING LIST -->
+        <section class="shopping-section" id="shopping-list">
+            <h2>♡ My Blushly Shopping List ♡</h2>
+            <p>Add your favourite beauty products below!</p>
+
+            <!-- Product name and price inputs -->
+            <div class="shopping-inputs">
+                <input
+                    type="text"
+                    id="itemInput"
+                    placeholder="Enter product name"
+                    aria-label="Product name"
+                >
+
+                <input
+                    type="number"
+                    id="priceInput"
+                    placeholder="Price (KSh)"
+                    min="0"
+                    step="0.01"
+                    aria-label="Product price"
+                >
+
+                <button id="addBtn" type="button">Add Item</button>
+            </div>
+
+            <!-- JavaScript adds shopping items here -->
+            <ul id="shoppingList"></ul>
+
+            <!-- Selected item total -->
+            <div class="shopping-total">
+                <h3>
+                    Total: KSh <span id="totalCost">0.00</span>
+                </h3>
+            </div>
+
+            <!-- Shopping list controls -->
+            <div class="shopping-actions">
+                <button id="purchasedBtn" type="button">
+                    ✓ Mark Purchased
+                </button>
+
+                <button id="clearBtn" type="button">
+                    Clear List
+                </button>
+            </div>
+        </section>
+
+            <section class="about" id="about">
+                <h2>A Little More Blushly, A lot more You</h2>
+                <p>At Blushly , beauty is all about empowering you to express your unique style and confidence.</p>
+            </section> 
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Blushly. All rights reserved.</p>
+        <p>Made with love for beauty lovers.</p>
+    </footer>
+
+</body>
+</html>
